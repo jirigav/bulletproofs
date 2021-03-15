@@ -29,8 +29,8 @@ mod bench_range_proof {
     use curv::cryptographic_primitives::hashing::traits::*;
     use curv::elliptic::curves::traits::*;
     use curv::BigInt;
-    type GE = curv::elliptic::curves::secp256_k1::GE;
-    type FE = curv::elliptic::curves::secp256_k1::FE;
+    type GE = curv::elliptic::curves::p256::GE;
+    type FE = curv::elliptic::curves::p256::FE;
 
     static AGGREGATION_SIZES: [usize; 6] = [1, 2, 4, 8, 16, 32];
 
@@ -906,8 +906,8 @@ mod bench_wip_range_proof {
     use bulletproof::proofs::range_proof_wip::*;
     use criterion::Criterion;
     use curv::arithmetic::traits::*;
-    use curv::elliptic::curves::secp256_k1::FE;
-    use curv::elliptic::curves::secp256_k1::GE;
+    use curv::elliptic::curves::p256::FE;
+    use curv::elliptic::curves::p256::GE;
     use curv::elliptic::curves::traits::*;
     use curv::BigInt;
 
