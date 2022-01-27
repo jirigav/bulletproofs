@@ -19,3 +19,4 @@ pub mod inner_product;
 pub mod range_proof;
 pub mod range_proof_wip;
 pub mod weighted_inner_product;
+mod p256_utils;
